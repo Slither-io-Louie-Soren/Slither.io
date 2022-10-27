@@ -1,2 +1,19 @@
 Kravliste
 
+Spilleren er en firkant, som skal kunne bevæge sig i disse retninger.
+x
+-x
+y
+-y
+De kan kun bevæge sig på en af akserne af gangen.
+
+Firkanten skal bevæge sig 4 felter pr. sekund.
+
+Hver felt skal være 50x50 pixels.
+
+Spillepladen er 800 x 800.
+
+Der skal spawne mindre firkante, som spilleren kan spise.
+Der skal kun være en lille firkant af gangen, og der spawner en ny, når spilleren har spist den gamle.
+
+Hvis spilleren rammer en kant på kanvaset, dør de.
