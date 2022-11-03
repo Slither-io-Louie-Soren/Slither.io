@@ -1,10 +1,20 @@
+int playerX,playerY;
+int speed;
+
+boolean w = false;
+boolean a = false;
+boolean s = false;
+boolean d = false;
+
+boolean dead = false;
+
 void setup(){
   size(800,800);
 }
 
 void draw(){
   background(220);
-  spilPlade();
+//  spilPlade();
 }
 
 void spilPlade(){
