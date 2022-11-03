@@ -19,3 +19,5 @@ Der skal kun være en lille firkant af gangen, og der spawner en ny, når spille
 Hvis spilleren rammer en kant på kanvaset, dør de.
 
 Spillers score skal holdes styr på.
+
+Godt arbejde!
