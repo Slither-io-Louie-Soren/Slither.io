@@ -1,5 +1,7 @@
 Kravliste
 
+Spillepladen skal være i en firkant, så der er en slags "border" rundt om.
+
 Spilleren er en firkant, som skal kunne bevæge sig i disse retninger.
 x
 -x
