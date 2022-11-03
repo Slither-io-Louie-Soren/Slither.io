@@ -1,3 +1,5 @@
+float madX,madY;
+
 int playerX,playerY;
 int speed;
 
@@ -10,10 +12,13 @@ boolean dead = false;
 
 void setup(){
   size(800,800);
+  start();
 }
 
 void draw(){
   background(220);
+  spilPlade();
+  mad();
 //  spilPlade();
 }
 
@@ -25,6 +30,13 @@ square(400,400,700);
     line(i*25,50,i*25,750);
     line(50,i*25,750,i*25);
 }
+
+
+}
+
+
+void start(){
+generateXYMad();
 
 
 }
