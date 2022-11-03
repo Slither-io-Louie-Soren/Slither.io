@@ -1,5 +1,15 @@
 float madX,madY;
 
+int playerX,playerY;
+int speed;
+
+boolean w = false;
+boolean a = false;
+boolean s = false;
+boolean d = false;
+
+boolean dead = false;
+
 void setup(){
   size(800,800);
   start();
@@ -9,6 +19,7 @@ void draw(){
   background(220);
   spilPlade();
   mad();
+//  spilPlade();
 }
 
 void spilPlade(){
