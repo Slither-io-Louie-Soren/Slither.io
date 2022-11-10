@@ -6,6 +6,8 @@ boolean a = false;
 boolean s = false;
 boolean d = false;
 
+boolean movement = false;
+
 boolean dead = false;
 
 void setup(){
@@ -14,7 +16,7 @@ void setup(){
   playerX = width/2;
   playerY = height/2;
   
-  speed = 3;
+  speed = 8;
   
 }
 
@@ -28,8 +30,8 @@ void draw(){
   
   
   if (!dead) {
-//  spilPlade();
-  square(playerX,playerY,20);
+  square(50,50,700);
+  square(playerX,playerY,40);
   move();
   die();
   
@@ -45,17 +47,8 @@ void draw(){
   
   if (dead) {
     text("You died!",width/2,height/2);
-    square(playerX,playerY,20);
+    square(50,50,700);
+    square(playerX,playerY,40);
 
-}
-}
-
-void spilPlade(){
-  rectMode(CENTER);
-square(400,400,700);
-
-  for(int i =3; i < 30; i++){
-    line(i*25,50,i*25,750);
-    line(50,i*25,750,i*25);
 }
 }

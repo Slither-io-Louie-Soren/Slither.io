@@ -33,11 +33,15 @@ void keyPressed() {
     s = false;
     d = true;
   }
+  movement = true;
   }
 }
 
 void move(){
+  
+  if(movement && speed < 15) {
     speed += 0.0005;
+  }
     
   if (w){
     playerY = playerY - speed;
@@ -57,7 +61,7 @@ void move(){
 }
 
 void die() {
-  if(playerX <= 0 || (width - 20) <= playerX || playerY <= 0 || (height - 20) <= playerY){
+  if(playerX < 50 || (width - 90) < playerX || playerY < 50 || (height - 90) < playerY){
     dead = true;
   }
 }
