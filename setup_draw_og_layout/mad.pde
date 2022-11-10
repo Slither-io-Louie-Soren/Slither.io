@@ -13,3 +13,13 @@ void generateXYMad(){
  madY = random(50,700);
 
 }
+
+void start(){
+  generateXYMad();
+}
+
+void yummy() {
+  if (playerX <= madX && madX <= playerX + 40 && playerY <= madY && madY <= playerY + 40) {
+    score++;
+    start();
+  }

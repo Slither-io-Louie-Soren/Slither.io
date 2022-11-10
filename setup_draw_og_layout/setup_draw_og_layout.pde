@@ -1,42 +1,67 @@
+float playerX,playerY;
+float speed;
+
 float madX,madY;
 
-int playerX,playerY;
-int speed;
+int score = 0;
 
 boolean w = false;
 boolean a = false;
 boolean s = false;
 boolean d = false;
 
+boolean movement = false;
+
 boolean dead = false;
+
+
 
 void setup(){
   size(800,800);
+  
+  playerX = width/2;
+  playerY = height/2;
+  
+  speed = 3;
+  
   start();
+  
 }
 
 void draw(){
   background(220);
-  spilPlade();
+  /*
+  square(playerX,playerY,20);
+  move();
+  die();
+  */
+  
+  
+  if (!dead) {
+  square(50,50,700);
+  move();
   mad();
-//  spilPlade();
+  yummy();
+  square(playerX,playerY,40);
+  die();
+  textSize(20);
+  fill(0);
+  text("Score: " + score,50,20);
+  
+  /*
+  println("W: " + w);
+  println("A: " + a);
+  println("S: " + s);
+  println("D: " + d);
+  */
+  
+  println(speed);
+  }
+  
+  if (dead) {
+    text("You died!",width/2,height/2);
+    square(50,50,700);
+    square(playerX,playerY,40);
+
 }
-
-void spilPlade(){
-  rectMode(CENTER);
-square(400,400,700);
-
-  for(int i =3; i < 30; i++){
-    line(i*25,50,i*25,750);
-    line(50,i*25,750,i*25);
-}
-
-
-}
-
-
-void start(){
-generateXYMad();
-
-
 }
