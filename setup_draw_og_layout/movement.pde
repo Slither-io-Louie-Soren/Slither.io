@@ -1,5 +1,11 @@
 void keyPressed() {
-  if (!dead){
+
+  if(dead){
+    if (key == 'r' || key == 'R'){
+      start();
+    }
+  } else {
+  
   if (key == 'w' || key == 'W'){
     w = true;
     a = false;
@@ -28,15 +34,11 @@ void keyPressed() {
     d = true;
   }
   }
-  
-  if(dead){
-    if (key == 'r' || key = 'R'){
-      start();
-    }
-  }
 }
 
 void move(){
+    speed += 0.0005;
+    
   if (w){
     playerY = playerY - speed;
   }
@@ -51,5 +53,11 @@ void move(){
   
   if (d){
     playerX = playerX + speed;
+  }
+}
+
+void die() {
+  if(playerX <= 0 || (width - 20) <= playerX || playerY <= 0 || (height - 20) <= playerY){
+    dead = true;
   }
 }
