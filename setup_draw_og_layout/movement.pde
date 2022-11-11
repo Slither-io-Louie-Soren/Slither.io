@@ -1,3 +1,4 @@
+
 void keyPressed() {
   if (dead) {
     if (key == 'r' || key == 'R') {

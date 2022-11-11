@@ -1,3 +1,5 @@
+
+
 void mad(){
   pushMatrix();
   translate(madX,madY);
@@ -23,3 +25,4 @@ void yummy() {
     score++;
     start();
   }
+}
