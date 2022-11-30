@@ -59,9 +59,12 @@ void draw(){
   }
   
   if (dead) {
-    text("You died!",width/2,height/2);
+    fill(0);
     square(50,50,700);
     square(playerX,playerY,40);
+    fill(255);
+    text("You died!",350,350);
+    text("Score: " + score,350,420);
 
 }
 }
