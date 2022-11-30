@@ -19,7 +19,7 @@ void start(){
 }
 
 void yummy() {
-  if (playerX <= madX && madX <= playerX + 40 && playerY <= madY && madY <= playerY + 40) {
+  if (playerX -25 <= madX && madX <= playerX + 40 && playerY - 25 <= madY && madY <= playerY + 40) {
     score++;
     start();
   }
