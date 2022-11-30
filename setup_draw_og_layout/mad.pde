@@ -23,3 +23,4 @@ void yummy() {
     score++;
     start();
   }
+}
