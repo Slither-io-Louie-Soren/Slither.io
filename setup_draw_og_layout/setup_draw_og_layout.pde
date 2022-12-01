@@ -3,16 +3,17 @@ float speed;
 
 float madX,madY;
 
-int score = 0;
+int score;
+int highscore;
 
-boolean w = false;
-boolean a = false;
-boolean s = false;
-boolean d = false;
+boolean w;
+boolean a;
+boolean s;
+boolean d;
 
-boolean movement = false;
+boolean movement;
 
-boolean dead = false;
+boolean dead;
 
 
 
@@ -46,7 +47,9 @@ void draw(){
   die();
   textSize(20);
   fill(0);
-  text("Score: " + score,50,20);
+  textSize(30);
+  text("Score: " + score,50,30);
+  text ("Highscore: " + highscore, 590, 30);
   
   /*
   println("W: " + w);
@@ -62,9 +65,11 @@ void draw(){
     fill(0);
     square(50,50,700);
     square(playerX,playerY,40);
-    fill(255);
-    text("You died!",350,350);
-    text("Score: " + score,350,420);
+    fill(255,0,0);
+    textSize(50);
+    textAlign(CENTER);
+    text("You died!",width/2,350);
+    text("Score: " + score,width/2,420);
 
 }
 }
