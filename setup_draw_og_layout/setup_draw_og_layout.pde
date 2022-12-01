@@ -3,16 +3,17 @@ float speed;
 
 float madX, madY;
 
-int score = 0;
+int score;
+int highscore;
 
-boolean w = false;
-boolean a = false;
-boolean s = false;
-boolean d = false;
+boolean w;
+boolean a;
+boolean s;
+boolean d;
 
-boolean movement = false;
+boolean movement;
 
-boolean dead = false;
+boolean dead;
 
 
 
@@ -37,6 +38,17 @@ void draw() {
 
 
   if (!dead) {
+  square(50,50,700);
+  move();
+  mad();
+  yummy();
+  square(playerX,playerY,40);
+  die();
+  fill(0);
+  textSize(30);
+  text("Score: " + score,50,30);
+  text ("Highscore: " + highscore, 590, 30);
+ 
     square(50, 50, 700);
     move();
     mad();

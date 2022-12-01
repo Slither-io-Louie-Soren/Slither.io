@@ -18,11 +18,37 @@ void generateXYMad(){
 
 void start(){
   generateXYMad();
+  
+
+  
+  playerX = width/2;
+  playerY = height/2;
+  
+  if ( highscore < score) {
+    highscore = score;
+  } 
+  
+  score = 0;
+    
+
+  w = false;
+  a = false;
+  s = false;
+  d = false;
+
+  movement = false;
+
+  dead = false;
+
+println("test");
+
+println("dead: " + dead);
+  
 }
 
 void yummy() {
   if (playerX -25 <= madX && madX <= playerX + 40 && playerY - 25 <= madY && madY <= playerY + 40) {
     score++;
-    start();
+    generateXYMad();
   }
 }
