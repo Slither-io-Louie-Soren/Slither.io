@@ -45,7 +45,6 @@ void draw(){
   yummy();
   square(playerX,playerY,40);
   die();
-  textSize(20);
   fill(0);
   textSize(30);
   text("Score: " + score,50,30);
