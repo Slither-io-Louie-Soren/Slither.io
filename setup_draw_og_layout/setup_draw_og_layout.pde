@@ -57,6 +57,7 @@ void draw() {
     println(speed);
   }
 
+
   if (dead) {
     text("You died!", width/2, height/2);
     square(50, 50, 700);
